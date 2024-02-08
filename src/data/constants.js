@@ -5,6 +5,8 @@ export const projects = [
       "We directed our attention to evaluating the ways in which data science could be used to help reduce building carbon emissions",
     image_link: "img/building.jpg",
     slug: "building_energy_efficiency",
+    full_details:
+      "We direct our attention to the carbon emissions by buildings in and around Baltimore City. We investigate the various problems that are due to these emissions along dimensions including their perceived negative impact on the environment and on the health of the city residents. <br><br> We concentrate our attention on evaluating the ways in which data science was or could be used to help reduce building carbon emissions in general and more specifically in the Baltimore City area. We focus on those problems for which we know that datasets are being collected by the city and work towards outlining a few key guidelines for collecting, processing, and getting electrification insights from building datasets.",
   },
   {
     name: "Data Science for Social Work",
@@ -12,6 +14,8 @@ export const projects = [
       "This work focuses on identifying ways on reducing the high rates of occurences of incidents such as violence against women, theft and murder.",
     image_link: "img/nasa.jpg",
     slug: "data_science_for_social_work",
+    full_details:
+      "Social concerns, including the high rates of occurrences of incidents such as violence against women, theft, and murder, have been a major focus of Baltimore City officials, especially as they relate to the city's African American population. <br><br> One of the main research areas of the Data Science Research lab at Morgan State University research focuses on collecting data sets from the city government and other institutions that we think should help us develop AI models for identifying ways in which we can help reduce the occurrences and the severity of these concerns. <br><br> We are also investigating the technical and the non-technical challenges that we must face and expect to face as we gather historical and current datasets that are related to these incidents, and as we rely on these datasets to develop AI to help social workers do their jobs to address the city’s social concerns.",
   },
 ];
 
@@ -66,6 +70,16 @@ export const people = [
     top_margin: "0px",
     description:
       "Bezaleel is interested in the creation of bio-artificial organs and aspires to engineer organs that emulate natural functions through machine learning. Specifically, I am intrigued by the prospect of developing an AI-driven heart capable of independent action.",
+  },
+  {
+    name: "Caleb Kadiri",
+    slug: "caleb_kadiri",
+    title: "Phd Student",
+    image_link: "img/people/caleb.png",
+    left_margin: "-25px",
+    top_margin: "-80px",
+    description:
+      "Caleb Kadiri is a committed research assistant and a graduate student in advanced computing, possessing a solid background in pharmacy. His academic and professional endeavors are motivated by a dedication to closing the divide between health and information technology. Holding a Bachelor's degree in Pharmacy and currently undertaking a Master of Science degree in Advanced Computing, Caleb serves as a research assistant. His current research focuses on employing Machine learning in cloud environments to enhance the work of social workers in Baltimore City and other regions where data analysis can provide valuable insights for their daily tasks.",
   },
 ];
 
