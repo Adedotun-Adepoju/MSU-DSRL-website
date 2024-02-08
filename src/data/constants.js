@@ -85,7 +85,7 @@ export const people = [
   {
     name: "Clyde Baidoo",
     slug: "clyde_baidoo",
-    title: "Sophomore",
+    title: "Undergrad Student",
     image_link: "img/people/clyde.png",
     left_margin: "-25px",
     top_margin: "-15px",
