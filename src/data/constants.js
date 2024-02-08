@@ -31,15 +31,6 @@ export const people = [
       "Radhouane Chouchane is passionate about developing and delivering quality projects that build on the current developments in cloud computing, machine learning and natural language processing. His ongoing research interests aim to use ML and NLP in the cloud to support the activities of social workers in Baltimore City and other areas where there is potential for data to yield helpful insights that social workers can use in their day-to-day activities. Since 2011, Radhouane Chouchane has been actively involved with such organizations as STARS, WIT and NCWIT whose mission is to broaden the participation of underrepresented minorities in computing.",
   },
   {
-    name: "Adedotun Adepoju",
-    slug: "adedotun_adepoju",
-    title: "Master's Student",
-    image_link: "img/people/dotun.png",
-    left_margin: "-5px",
-    top_margin: "3px",
-    description: "",
-  },
-  {
     id: 3,
     name: "Dapiriye Briggs",
     slug: "dapiriye_briggs",
@@ -62,6 +53,16 @@ export const people = [
       "I’m Praharsha Pokharel, a motivated and ambitious data science research student at Morgan State University. With a keen interest in Data Science, Machine Learning, and Artificial Intelligence, I dedicate myself to a mission to explore the limitless possibilities in these fields.\nI am actively engaged in research projects in the Morgan State Data Science Research Lab (MSU-DSRL), where I learn and apply skills including programming in Python and its libraries, statistical analysis methods, machine learning predictions, report writing, and so on.\nBeing a part of MSU-DSRL has given me endless opportunities to explore the endless world of Data Science and Artificial intelligence. We, as a team actively engage in the growth of not only technical skills but also soft skills like effective communication and collaborative skills helping each other be an effective team player in the real world.",
   },
   {
+    name: "Adedotun Adepoju",
+    slug: "adedotun_adepoju",
+    title: "Master's Student",
+    image_link: "img/people/dotun.png",
+    left_margin: "-5px",
+    top_margin: "3px",
+    description:
+      "Adedotun is really passionate about leveraging Machine learning and software development to make a positive impact on society through innovative solutions. He is fascinated by the potential of artiticial intellingence to transform industries and solve real-world challenges. He is deeply committed to using his skills to tackle societal issues",
+  },
+  {
     name: "Bezaleel Akinbami",
     slug: "bezaleel_akinbami",
     title: "Master's Student",
@@ -80,6 +81,16 @@ export const people = [
     top_margin: "-80px",
     description:
       "Caleb Kadiri is a committed research assistant and a graduate student in advanced computing, possessing a solid background in pharmacy. His academic and professional endeavors are motivated by a dedication to closing the divide between health and information technology. Holding a Bachelor's degree in Pharmacy and currently undertaking a Master of Science degree in Advanced Computing, Caleb serves as a research assistant. His current research focuses on employing Machine learning in cloud environments to enhance the work of social workers in Baltimore City and other regions where data analysis can provide valuable insights for their daily tasks.",
+  },
+  {
+    name: "Clyde Baidoo",
+    slug: "clyde_baidoo",
+    title: "Sophomore",
+    image_link: "img/people/clyde.png",
+    left_margin: "-25px",
+    top_margin: "-15px",
+    description:
+      "Clyde Baidoo Jr, a sophomore and a computer science student at Morgan State University with interest in AI and Machine Learning Systems.",
   },
 ];
 
