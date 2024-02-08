@@ -1,0 +1,309 @@
+.navigation-section {
+  padding: 0.5% 10% 0.5% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // position: sticky;
+
+  .logo-section {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+      width: auto;
+      height: auto;
+      margin-right: 4px;
+    }
+    p {
+      color: black;
+      font-weight: bold;
+      margin-top: 20%;
+    }
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 1%;
+
+    .nav-item {
+      color: grey;
+      cursor: pointer;
+      font-size: large;
+    }
+
+    .active-tab {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+.about-section {
+  background-image: url("../assets/img/about.jpg");
+  background-size: cover;
+  // height: 93vh;
+  padding: 13% 10% 10% 10%;
+  display: flex;
+  box-sizing: border-box;
+
+  .lab-info {
+    width: 70%;
+    .title {
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+    .description {
+      color: white;
+      font-size: 20px;
+      line-height: 35px;
+      font-weight: bold;
+    }
+  }
+  .upcoming-event {
+    // margin: 40% 20% 10% 30%;
+    margin-top: 20%;
+    margin-left: 10%;
+    .title {
+      display: flex;
+      flex-direction: row;
+      // width: 90%;
+      // justify-content: space-between;
+      gap: 20px;
+
+      img {
+        max-width: 32px;
+        max-height: 32px;
+        width: auto;
+        height: auto;
+      }
+      p {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+      }
+    }
+    .date {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    .event-name {
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .event-name:hover {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}
+
+.home {
+  .projects-section {
+    padding: 30px 10% 5% 10%;
+
+    .title-container {
+      width: 150px;
+      margin: 0 auto 0 auto;
+      .title {
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 0px;
+      }
+      #border-bottom {
+        border-bottom: 5px solid #d9d9d9;
+        position: relative;
+        left: 30px;
+        width: 90px;
+        margin-top: 5px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .project-tiles {
+      display: flex;
+      justify-content: space-between;
+
+      .project-card {
+        width: 40%;
+        height: 400px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .people-section {
+    background-color: #d9d9d9;
+    padding: 30px 10% 5% 10%;
+
+    .title-container {
+      width: 150px;
+      margin: 0 auto 0 auto;
+      .title {
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+    }
+
+    .people-tiles {
+      display: flex;
+      // justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      .person-card {
+        padding: 0px;
+        flex-basis: 33.3%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #36455c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 10% 5% 10%;
+
+  .address {
+    p {
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+  }
+
+  .contact {
+    p {
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+  }
+}
+
+// mobile-view
+@media (max-width: 599px) {
+  .navigation-section {
+    padding: 0.3% 2% 0.5% 30px;
+    .menu-icon {
+      display: block;
+      padding: 7px 10px 5px 2px;
+
+      .icon {
+        align-items: center;
+      }
+    }
+    .logo-section {
+      img {
+        max-width: 40px;
+        max-height: 40px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .nav-items {
+      display: none;
+    }
+  }
+
+  .about-section {
+    padding: 40px 20px 60px 20px;
+    display: block;
+
+    .lab-info {
+      width: 100%;
+
+      .title {
+        font-size: 26px;
+      }
+      .description {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+      }
+    }
+    .upcoming-event {
+      margin-top: 40px;
+      margin-left: 10px;
+
+      .title {
+        gap: 15px;
+
+        img {
+          max-width: 30px;
+          max-height: 30px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+      .date {
+        font-size: 18px;
+      }
+      .event-name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .home {
+    .projects-section {
+      .title-container {
+        .title {
+          font-size: 20px;
+        }
+      }
+      .project-tiles {
+        display: block;
+
+        .project-card {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .people-section {
+    .people-tiles {
+      display: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .person-card {
+        flex-basis: 100%;
+        // border: 1px solid red;
+        // width: 100%;
+      }
+    }
+  }
+}
