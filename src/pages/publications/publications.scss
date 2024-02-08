@@ -1,26 +1,141 @@
 .main-container {
-  padding: 40px 10% 0.5% 10%;
+  .navigation-section {
+    padding: 0.5% 10% 0.5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  .year {
-    margin-bottom: 50px;
-    p{
-      margin-bottom: 0px;
+    .logo-section {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+        margin-right: 4px;
+      }
+      p {
+        color: black;
+        font-weight: bold;
+        margin-top: 20%;
+      }
     }
-    hr {
-      clear: both;
-      display: inline-block;
-      width: 100%;
-      border: solid 3px #E8E7E8
-    }
-    .title {
-      color: darkblue;
-    }
-    .extras {
 
+    .menu-icon {
+      display: none;
     }
-    .people {
-      
+
+    .nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%;
+      padding-top: 1%;
+
+      .nav-item {
+        color: grey;
+        cursor: pointer;
+        font-size: large;
+      }
+
+      .active-tab {
+        color: black;
+        font-weight: bold;
+      }
     }
   }
 
+  .about-section {
+    background-image: url("../../assets/img/about.jpg");
+    background-size: cover;
+    padding: 13% 10% 10% 10%;
+    display: flex;
+    box-sizing: border-box;
+
+    .lab-info {
+      width: 70%;
+      .title {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .publications {
+    padding: 50px 10% 0.5% 10%;
+    .year {
+      margin-bottom: 50px;
+      p {
+        margin-bottom: 0px;
+      }
+      hr {
+        clear: both;
+        display: inline-block;
+        width: 100%;
+        border: solid 3px #e8e7e8;
+      }
+      .title {
+        color: darkblue;
+      }
+      .extras {
+      }
+      .people {
+      }
+    }
+  }
+}
+
+// mobile-view
+@media (max-width: 599px) {
+  .main-container {
+    .navigation-section {
+      padding: 0.3% 2% 0.5% 30px;
+      .menu-icon {
+        display: block;
+        padding: 7px 10px 5px 2px;
+
+        .icon {
+          align-items: center;
+        }
+      }
+      .logo-section {
+        img {
+          max-width: 40px;
+          max-height: 40px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+
+      .nav-items {
+        display: none;
+      }
+    }
+
+    .about-section {
+      padding: 40px 20px 60px 20px;
+      display: block;
+
+      .lab-info {
+        width: 100%;
+
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .publications {
+      padding-top: 25px;
+
+      .year {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }

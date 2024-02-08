@@ -38,7 +38,6 @@
         <p class="title" v-if="activeTab == 'Home'">
           Data Science Research Lab
         </p>
-        <p class="title" v-if="activeTab == 'Publications'">Publications</p>
         <p class="description" v-if="activeTab == 'Home'">
           The Data Science Research Lab is part of Morgan State University at
           the Computer Science Department. We focus on converging cutting edge
@@ -92,9 +91,6 @@
         </div>
       </div>
     </div>
-    <div v-else-if="activeTab == 'Publications'" class="publications">
-      <Publications></Publications>
-    </div>
     <div class="footer">
       <div class="address">
         <p>Address</p>
@@ -110,13 +106,11 @@
 import ProjectCard from "src/components/project-card/project.vue";
 import PersonCard from "src/components/people-card/people.vue";
 import { projects, people } from "src/data/constants";
-import Publications from "./publications/publications.vue";
 export default {
   name: "PageIndex",
   components: {
     ProjectCard,
     PersonCard,
-    Publications,
   },
 
   data() {
@@ -139,7 +133,7 @@ export default {
         },
         {
           name: "Publications",
-          to: "/",
+          to: "/publications",
         },
       ],
     };
@@ -150,7 +144,7 @@ export default {
   methods: {
     navItemClick(item) {
       if (item.to != "") {
-        this.activeTab = item.name;
+        this.$router.push(item.to);
       } else {
         const element = document.getElementById(item.name.toLowerCase());
         if (element) {
