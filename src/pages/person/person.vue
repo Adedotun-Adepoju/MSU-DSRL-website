@@ -80,6 +80,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import "./person.scss";
 </style>
