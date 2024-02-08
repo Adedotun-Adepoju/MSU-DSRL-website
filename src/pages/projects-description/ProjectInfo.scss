@@ -1,0 +1,165 @@
+.container {
+  .navigation-section {
+    padding: 0.5% 10% 0.5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo-section {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+        margin-right: 4px;
+      }
+      p {
+        color: black;
+        font-weight: bold;
+        margin-top: 20%;
+      }
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    .nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%;
+      padding-top: 1%;
+
+      .nav-item {
+        color: grey;
+        cursor: pointer;
+        font-size: large;
+      }
+
+      .active-tab {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .about-section {
+    background-image: url("../../assets/img/about.jpg");
+    background-size: cover;
+    padding: 13% 10% 10% 10%;
+    display: flex;
+    box-sizing: border-box;
+
+    .lab-info {
+      width: 70%;
+      .title {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .overview-section {
+    padding: 4% 8% 0.5% 10%;
+    .overview {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .body {
+      display: flex;
+      gap: 50px;
+      .text-section {
+        p {
+          font-size: 25px;
+        }
+      }
+      .image-section {
+        padding: 0px 0;
+        img {
+          max-width: 600px;
+          max-height: 600px;
+          height: auto;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+// mobile-view
+@media (max-width: 599px) {
+  .container {
+    .navigation-section {
+      padding: 0.3% 2% 0.5% 30px;
+      .menu-icon {
+        display: block;
+        padding: 7px 10px 5px 2px;
+
+        .icon {
+          align-items: center;
+        }
+      }
+      .logo-section {
+        img {
+          max-width: 40px;
+          max-height: 40px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+
+      .nav-items {
+        display: none;
+      }
+    }
+
+    .about-section {
+      padding: 40px 20px 60px 20px;
+      display: block;
+
+      .lab-info {
+        width: 100%;
+
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .overview-section {
+      padding: 20px;
+      .overview {
+        // margin-left: 20px;
+      }
+
+      .body {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        .text-section {
+          margin-top: 0px;
+          p {
+            text-align: justify;
+            font-size: 20px;
+          }
+        }
+        .image-section {
+          margin: 0 auto 0 auto;
+          img {
+            max-width: 350px;
+            max-height: 300px;
+          }
+        }
+      }
+    }
+  }
+}

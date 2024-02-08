@@ -74,7 +74,7 @@ export default {
 
   methods: {
     goToHomePage() {
-      this.$router.push("/");
+      this.$router.push("/#people");
     },
   },
 };
