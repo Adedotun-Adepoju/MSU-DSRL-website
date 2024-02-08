@@ -38,7 +38,7 @@
       height: 200px;
       overflow: hidden;
       border-radius: 50%;
- 
+
       cursor: pointer;
     }
   }
@@ -51,6 +51,44 @@
       text-align: justify;
       line-height: 35px;
       font-size: 22px;
+    }
+  }
+}
+
+// mobile-view
+@media (max-width: 599px) {
+  .container {
+    .toggle-container {
+      padding: 20px 10px 0px 15px;
+    }
+
+    .details {
+      width: 80%;
+      display: block;
+      margin: 30px auto 0px auto;
+      .info {
+        padding: 0px;
+        .name {
+          font-size: 25px;
+          margin-bottom: 4px;
+        }
+        .title {
+          text-align: left;
+          font-size: 25px;
+        }
+      }
+
+      .circular-image {
+        margin: 0 auto 0 auto;
+      }
+    }
+
+    .about {
+      width: 80%;
+      p {
+        line-height: 30px;
+        text-align: none;
+      }
     }
   }
 }
