@@ -58,6 +58,8 @@
 // mobile-view
 @media (max-width: 599px) {
   .container {
+    height: fit-content;
+    padding-bottom: 60px;
     .toggle-container {
       padding: 20px 10px 0px 15px;
     }
@@ -87,7 +89,9 @@
       width: 80%;
       p {
         line-height: 30px;
-        text-align: none;
+        font-size: 16px;
+        text-align: justify;
+        word-spacing: -2px;
       }
     }
   }
