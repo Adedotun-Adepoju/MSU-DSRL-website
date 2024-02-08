@@ -51,7 +51,9 @@
           <p>upcoming Event</p>
         </div>
         <p class="date">05/21/2024</p>
-        <p class="event-name">2024 Data Science for Social Good Conference</p>
+        <p class="event-name" @click="goToConference">
+          2024 Data Science for Social Good Conference
+        </p>
       </div>
     </div>
     <div v-if="activeTab == 'Home'" class="home">
@@ -154,6 +156,10 @@ export default {
     },
     goToDescription(project) {
       this.$router.push(`/project/${project.slug}`);
+    },
+    goToConference() {
+      const conferenceUrl = process.env.CONFERENCE_WEBSITE;
+      window.open(conferenceUrl);
     },
   },
 };
