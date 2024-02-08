@@ -55,7 +55,7 @@ export const people = [
   {
     name: "Adedotun Adepoju",
     slug: "adedotun_adepoju",
-    title: "Master's Student",
+    title: "Contributor",
     image_link: "img/people/dotun.png",
     left_margin: "-5px",
     top_margin: "3px",
