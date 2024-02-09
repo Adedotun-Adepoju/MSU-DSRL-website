@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="top-button">
+      <q-btn @click="goToTop" icon="arrow_upward" class="go-to-top-btn" />
+    </div>
     <div class="navigation-section">
       <div class="logo-section">
         <img src="../assets/img/lab-logo.jpeg" alt="" />
@@ -160,6 +163,12 @@ export default {
     goToConference() {
       const conferenceUrl = process.env.CONFERENCE_WEBSITE;
       window.open(conferenceUrl);
+    },
+    goToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
 };

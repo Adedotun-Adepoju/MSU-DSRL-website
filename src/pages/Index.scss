@@ -1,3 +1,9 @@
+.go-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+}
 .navigation-section {
   padding: 0.5% 10% 0.5% 10%;
   display: flex;
@@ -207,6 +213,12 @@
 
 // mobile-view
 @media (max-width: 599px) {
+  .go-to-top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 8px;
+    width: 20px;
+  }
   .navigation-section {
     padding: 0.3% 2% 0.5% 30px;
     .menu-icon {
