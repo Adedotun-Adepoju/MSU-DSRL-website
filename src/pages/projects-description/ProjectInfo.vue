@@ -70,15 +70,15 @@ export default {
         },
         {
           name: "Projects",
-          to: "",
+          to: "/",
         },
         {
           name: "People",
-          to: "",
+          to: "/",
         },
         {
           name: "Publications",
-          to: "/",
+          to: "/publications",
         },
       ],
     };
