@@ -53,7 +53,7 @@
           <img src="../assets/img/calendar-icon.png" alt="" />
           <p>upcoming Event</p>
         </div>
-        <p class="date">05/21/2024</p>
+        <p class="date">May 03, 2024</p>
         <p class="event-name" @click="goToConference">
           2024 Data Science for Social Good Conference
         </p>
@@ -98,11 +98,12 @@
     </div>
     <div class="footer">
       <div class="address">
-        <p>Address</p>
+        <p class="title">Address</p>
+        <p class="full-address">McMechen Hall 624</p>
+        <p class="full-address">1700 East Cold Spring Lane</p>
+        <p class="full-address">Baltimore, Maryland 21251</p>
       </div>
-      <div class="contact">
-        <p>Contact</p>
-      </div>
+      <div class="contact"></div>
     </div>
   </div>
 </template>

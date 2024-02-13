@@ -55,8 +55,9 @@
 .about-section {
   background-image: url("../assets/img/about.jpg");
   background-size: cover;
+  height: 45vh;
   // height: 93vh;
-  padding: 13% 10% 10% 10%;
+  padding: 3% 10% 10% 10%;
   display: flex;
   box-sizing: border-box;
 
@@ -77,7 +78,7 @@
   }
   .upcoming-event {
     // margin: 40% 20% 10% 30%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 10%;
     .title {
       display: flex;
@@ -190,14 +191,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 10% 5% 10%;
+  padding: 60px 10% 5% 20%;
 
   .address {
-    p {
+    .title {
       color: white;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 25px;
+      font-size: 30px;
+    }
+    .full-address {
+      color: white;
+      font-size: 15px;
+      line-height: 10px;
     }
   }
 
@@ -247,6 +253,7 @@
   .about-section {
     padding: 40px 20px 60px 20px;
     display: block;
+    height: auto;
 
     .lab-info {
       width: 100%;
@@ -316,5 +323,9 @@
         // width: 100%;
       }
     }
+  }
+
+  .footer {
+    padding: 30px 10% 5% 20%;
   }
 }
