@@ -162,7 +162,7 @@ export default {
       this.$router.push(`/project/${project.slug}`);
     },
     goToConference() {
-      const conferenceUrl = process.env.CONFERENCE_WEBSITE;
+      const conferenceUrl = "https://dsrl-social-good.vercel.app/#/";
       window.open(conferenceUrl);
     },
     goToTop() {
