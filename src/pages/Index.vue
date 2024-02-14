@@ -55,7 +55,7 @@
         </div>
         <p class="date">May 03, 2024</p>
         <p class="event-name" @click="goToConference">
-          2024 Data Science for Social Good Conference
+          2024 Data Science for Social Work Conference
         </p>
       </div>
     </div>
